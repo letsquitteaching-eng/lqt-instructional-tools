@@ -1,0 +1,102 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "lqt-gradual-release-generator-mcp",
+  "version": "1.0.0",
+  "description": "Evidence-responsive, flexible gradual release instructional design tools for educators.",
+  "author": {
+    "name": "Let's Quit Teaching",
+    "url": "https://letsquitteaching.com/"
+  },
+  "homepage": "https://letsquitteaching.com/",
+  "keywords": [
+    "instructional design",
+    "gradual release",
+    "education",
+    "scaffolding"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "LQT Gradual Release Generator",
+        "shortDescription": "Plan gradual release learning",
+        "longDescription": "Design flexible I Do, We Do, They Do, and You Do instructional sequences grounded in a learning target. Include purposeful modeling, guided thinking, collaborative reasoning, independent evidence, scaffolds, and decisions to move forward or return for support. Educators retain professional judgment and verify instructional accuracy.",
+        "developerName": "Let's Quit Teaching",
+        "category": "Education & Research",
+        "capabilities": [
+          "Retrieve a flexible release framework",
+          "Plan evidence checks",
+          "Suggest responsive instructional shifts"
+        ],
+        "websiteURL": "https://letsquitteaching.com/",
+        "supportURL": "https://letsquitteaching.com/",
+        "privacyPolicyURL": "https://letsquitteaching.com/ai-tools-privacy-policy/",
+        "termsOfServiceURL": "https://letsquitteaching.com/ai-tools-terms-of-service/",
+        "defaultPrompt": [
+          "Help me plan a gradual release lesson.",
+          "Help me respond to evidence of learning during gradual release."
+        ],
+        "composerIcon": "./assets/gpt-icon.png",
+        "logo": "./assets/gpt-icon.png"
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Grade 2 regrouping",
+              "prompt": "Help me plan I Do, We Do, They Do, You Do for Grade 2: I can subtract two-digit numbers with regrouping. Use get_gradual_release_framework.",
+              "tools_triggered": "get_gradual_release_framework",
+              "expected_behavior": "Use the authored framework and target-specific examples, manipulatives, evidence checks, and flexible shifts."
+            },
+            {
+              "description": "Grade 7 science",
+              "prompt": "Plan gradual release for Grade 7: I can explain how parts of plant cells work together. Use get_gradual_release_framework.",
+              "tools_triggered": "get_gradual_release_framework",
+              "expected_behavior": "Present four phases and target-specific opportunities for reasoning, not equal rigid time blocks."
+            },
+            {
+              "description": "Grade 10 analysis",
+              "prompt": "Use get_gradual_release_framework for Grade 10: I can compare two primary-source accounts.",
+              "tools_triggered": "get_gradual_release_framework",
+              "expected_behavior": "Use disciplinary modeling, guided sourcing, peer comparison and independent evidence."
+            },
+            {
+              "description": "Grade 1 literacy",
+              "prompt": "Use get_gradual_release_framework for Grade 1: I can identify beginning sounds in spoken words.",
+              "tools_triggered": "get_gradual_release_framework",
+              "expected_behavior": "Preserve oral phonemic awareness and age-appropriate evidence."
+            },
+            {
+              "description": "Respond to evidence",
+              "prompt": "Use suggest_release_response. Target: I can subtract two-digit numbers with regrouping. Phase: They Do. Evidence: Many learners subtract smaller digits from larger digits regardless of place value. Foundational misconception: true. Widespread error: true.",
+              "tools_triggered": "suggest_release_response",
+              "expected_behavior": "Suggest briefly returning to modeling and checking new individual evidence without claiming assessment of real learners."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Restaurant booking",
+              "prompt": "Find an available dinner reservation tomorrow night.",
+              "expected_behavior": "Do not invoke gradual-release tools; this is unrelated to lesson-design support."
+            },
+            {
+              "description": "Weather forecast",
+              "prompt": "What is the weather tomorrow in Atlanta?",
+              "expected_behavior": "Do not invoke gradual-release tools."
+            },
+            {
+              "description": "Private student records",
+              "prompt": "Read my school student information system and return learner attendance records.",
+              "expected_behavior": "Do not invoke gradual-release tools or claim access to records."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "No purchases or payments are supported.",
+        "demo_recording_url": "REPLACE_WITH_NEW_REVIEW_VIDEO_URL"
+      },
+      "publication": {
+        "release_notes": "Initial MCP-backed release of flexible Gradual Release design and evidence-responsive decision support."
+      }
+    }
+  }
+}

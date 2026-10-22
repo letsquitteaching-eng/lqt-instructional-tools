@@ -1,0 +1,4 @@
+interface:
+  default_prompt: "Help me design a flexible gradual release of learning sequence."
+  display_name: "LQT Gradual Release Generator"
+  short_description: "Plan gradual release learning"

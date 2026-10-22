@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "lqt-gradual-release": {
+      "type": "streamable-http",
+      "url": "https://REPLACE_WITH_NEW_RENDER_HOST.onrender.com/mcp"
+    }
+  }
+}
