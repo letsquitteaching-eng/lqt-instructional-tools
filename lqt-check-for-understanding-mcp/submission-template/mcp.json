@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "lqt-cfu": {
+      "type": "streamable-http",
+      "url": "https://REPLACE_WITH_ACTUAL_CFU_RENDER_HOST.onrender.com/mcp"
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "lqt-check-for-understanding-mcp",
+  "version": "1.0.0",
+  "description": "Help educators design quick checks that elicit learner thinking and inform responsive instruction.",
+  "author": {
+    "name": "Let's Quit Teaching",
+    "url": "https://letsquitteaching.com/"
+  },
+  "homepage": "https://letsquitteaching.com/",
+  "keywords": [
+    "formative assessment",
+    "check for understanding",
+    "instructional design",
+    "education"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "LQT Check for Understanding",
+        "shortDescription": "Check learner understanding",
+        "longDescription": "Design purposeful Checks for Understanding before, during, or after a lesson. Elicit evidence of learner thinking, interpret likely secure and partial understanding, and respond through targeted Reteach, Clarify, or Extend options. Includes grade-appropriate prompts, broad participation, and next-lesson evidence. Designed to support educator judgment, not automatically assess learners.",
+        "developerName": "Let's Quit Teaching",
+        "category": "Education & Research",
+        "capabilities": [
+          "Select CfU strategies by lesson timing",
+          "Design evidence-rich checks",
+          "Suggest responsive next moves"
+        ],
+        "websiteURL": "https://letsquitteaching.com/",
+        "supportURL": "https://letsquitteaching.com/",
+        "privacyPolicyURL": "https://letsquitteaching.com/ai-tools-privacy-policy/",
+        "termsOfServiceURL": "https://letsquitteaching.com/ai-tools-terms-of-service/",
+        "defaultPrompt": [
+          "Help me create checks for understanding."
+        ],
+        "composerIcon": "./assets/gpt-icon.png",
+        "logo": "./assets/gpt-icon.png"
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Grade 7 equations",
+              "prompt": "Use get_cfu_options for Grade 7, Learning Target: I can solve two-step equations, Before instruction.",
+              "tools_triggered": "get_cfu_options",
+              "expected_behavior": "Provide 3\u20135 concrete Before options with evidence, interpretation, response, and targeted probes."
+            },
+            {
+              "description": "Grade 3 multiplication",
+              "prompt": "Use get_cfu_options for Grade 3, Learning Target: I can explain multiplication using arrays, During instruction.",
+              "tools_triggered": "get_cfu_options",
+              "expected_behavior": "Select During categories, using grade-appropriate array responses and reasoning."
+            },
+            {
+              "description": "Grade 10 history",
+              "prompt": "Use get_cfu_options for Grade 10, Learning Target: I can corroborate claims across two historical sources, After instruction.",
+              "tools_triggered": "get_cfu_options",
+              "expected_behavior": "Provide aligned individual reasoning and transfer checks."
+            },
+            {
+              "description": "Grade 1 phoneme",
+              "prompt": "Use get_cfu_options for Grade 1, Learning Target: I can identify initial sounds in spoken words, During instruction.",
+              "tools_triggered": "get_cfu_options",
+              "expected_behavior": "Offer age-appropriate oral response methods and evidence."
+            },
+            {
+              "description": "Respond to misconception",
+              "prompt": "Use suggest_cfu_response. Learning Target: I can solve two-step equations. Timing: During. Evidence: Most learners subtract 5 but do not divide by 3 in 3x+5=17. Pattern: widespread_misunderstanding.",
+              "tools_triggered": "suggest_cfu_response",
+              "expected_behavior": "Suggest a short reteach of inverse operations and a new individual evidence check."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Restaurant booking",
+              "prompt": "Find a dinner reservation tonight.",
+              "expected_behavior": "Do not invoke CfU tools."
+            },
+            {
+              "description": "General weather",
+              "prompt": "What is tomorrow\u2019s weather forecast?",
+              "expected_behavior": "Do not invoke CfU tools."
+            },
+            {
+              "description": "Student record lookup",
+              "prompt": "Search school records for the attendance and grades of named learners.",
+              "expected_behavior": "Do not invoke CfU tools or claim record access."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "No transactions supported.",
+        "demo_recording_url": "REPLACE_WITH_REAL_CFU_VIDEO_URL"
+      },
+      "publication": {
+        "release_notes": "Initial MCP-powered LQT Check for Understanding release, with timing-based strategy retrieval and evidence-responsive instructional suggestions."
+      }
+    }
+  }
+}

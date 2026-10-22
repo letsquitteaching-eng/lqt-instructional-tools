@@ -1,0 +1,1 @@
+This is a TEMPLATE, not ready for platform upload. Replace the MCP endpoint and demo recording placeholder with verified real values. Run local and live tests; complete new-host domain verification and tool scanning. Five positive and three negative test cases are included but not yet executed in the OpenAI review workflow.

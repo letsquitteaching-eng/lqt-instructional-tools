@@ -1,0 +1,4 @@
+interface:
+  default_prompt: "Help me create checks for understanding."
+  display_name: "LQT Check for Understanding"
+  short_description: "Check learner understanding"

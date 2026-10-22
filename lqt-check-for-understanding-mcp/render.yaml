@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: lqt-cfu-mcp
+    runtime: python
+    rootDir: lqt-check-for-understanding-mcp
+    buildCommand: pip install -r requirements.txt
+    startCommand: python server.py
