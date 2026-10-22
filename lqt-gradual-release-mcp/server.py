@@ -12,7 +12,7 @@ mcp = FastMCP("LQT Gradual Release Idea Generator")
 
 # OpenAI ownership verification for this Render hostname.
 # This verification value is intended to be publicly returned by the endpoint.
-OPENAI_DOMAIN_CHALLENGE = "eKGwD9sxxaSGBjd0qlbZW6VF5GRhf70thNiRSXG65Vg"
+OPENAI_DOMAIN_CHALLENGE = "eKGWD9sxxaSGBjd0qlbZW6VF5GRhf70thNiRSXG65Vg"
 
 @mcp.custom_route("/.well-known/openai-apps-challenge", methods=["GET"])
 async def openai_domain_verification(request: Request) -> PlainTextResponse:
