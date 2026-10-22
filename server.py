@@ -5,11 +5,22 @@ import os
 import re
 from pathlib import Path
 from fastmcp import FastMCP
+from starlette.requests import Request
+from starlette.responses import PlainTextResponse
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("lqt.opener")
 
 mcp = FastMCP("LQT Opener Generator")
+
+# Public domain ownership proof requested by OpenAI Platform.
+# The response is plain text at the domain-root well-known path.
+OPENAI_DOMAIN_CHALLENGE = "gcSiPxaVQj06v3wGGA5DBuVTIPjeKnvoRMAy3GqCX80"
+
+@mcp.custom_route("/.well-known/openai-apps-challenge", methods=["GET"])
+async def openai_domain_verification(request: Request) -> PlainTextResponse:
+    return PlainTextResponse(OPENAI_DOMAIN_CHALLENGE)
+
 STRATEGIES = json.loads((Path(__file__).parent / "strategies.json").read_text(encoding="utf-8"))
 PURPOSES = {"prior knowledge", "curiosity", "collaboration", "prerequisite", "vocabulary", "misconceptions"}
 
