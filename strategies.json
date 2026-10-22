@@ -1,0 +1,409 @@
+[
+  {
+    "name": "3-2-1",
+    "description": "3 known facts, 2 questions to explore, and 1 question about the learning",
+    "tags": [
+      "prior knowledge",
+      "curiosity"
+    ]
+  },
+  {
+    "name": "5-3-1 (alone, pair, group)",
+    "description": "Brainstorm five individually, refine three in pairs, and agree on one in groups",
+    "tags": [
+      "prior knowledge",
+      "collaboration"
+    ]
+  },
+  {
+    "name": "Acrostics",
+    "description": "Use each letter of a key concept to generate a descriptor",
+    "tags": [
+      "prior knowledge",
+      "vocabulary"
+    ]
+  },
+  {
+    "name": "Admit Ticket",
+    "description": "Answer a prerequisite or previous-learning prompt on entry",
+    "tags": [
+      "prior knowledge",
+      "prerequisite"
+    ]
+  },
+  {
+    "name": "Alphabet Response",
+    "description": "Generate facts or descriptors using assigned letters",
+    "tags": [
+      "prior knowledge",
+      "vocabulary"
+    ]
+  },
+  {
+    "name": "Alphabet Sequential Round Table",
+    "description": "Add words or ideas to a shared alphabet grid in sequence",
+    "tags": [
+      "collaboration",
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Anticipation Activity",
+    "description": "Respond to topic statements before learning and revisit afterward",
+    "tags": [
+      "misconceptions",
+      "curiosity"
+    ]
+  },
+  {
+    "name": "Carousel Brainstorming",
+    "description": "Move among chart prompts and respond to earlier ideas",
+    "tags": [
+      "collaboration",
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Charades/Improvisation/Role Play",
+    "description": "Represent or predict concepts with role play",
+    "tags": [
+      "curiosity",
+      "collaboration"
+    ]
+  },
+  {
+    "name": "Cloze Activity",
+    "description": "Complete a short paragraph with key vocabulary from a word list",
+    "tags": [
+      "prerequisite",
+      "vocabulary"
+    ]
+  },
+  {
+    "name": "Concept Map/Word Map",
+    "description": "Map definition, properties, examples and nonexamples",
+    "tags": [
+      "prior knowledge",
+      "vocabulary"
+    ]
+  },
+  {
+    "name": "Dear…",
+    "description": "Write a letter to a person or character about the focus",
+    "tags": [
+      "prior knowledge",
+      "curiosity"
+    ]
+  },
+  {
+    "name": "Frayer Model",
+    "description": "Use definition, characteristics, examples and nonexamples for a concept",
+    "tags": [
+      "vocabulary",
+      "misconceptions"
+    ]
+  },
+  {
+    "name": "Gallery Walk",
+    "description": "View displayed text or images and respond to specified prompts",
+    "tags": [
+      "curiosity",
+      "collaboration"
+    ]
+  },
+  {
+    "name": "Game On!",
+    "description": "Answer lesson-related questions through a brief game",
+    "tags": [
+      "prior knowledge",
+      "collaboration"
+    ]
+  },
+  {
+    "name": "Give One-Get One",
+    "description": "Record three ideas and collect two additional peer ideas",
+    "tags": [
+      "collaboration",
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Illustration/Drawing/Cartoon/Tattoo",
+    "description": "Draw what is already understood about the topic",
+    "tags": [
+      "prior knowledge",
+      "misconceptions"
+    ]
+  },
+  {
+    "name": "Imaginary Scenario",
+    "description": "Take on an authentic role and brainstorm needed knowledge",
+    "tags": [
+      "curiosity",
+      "prerequisite"
+    ]
+  },
+  {
+    "name": "Journals",
+    "description": "Respond in writing to a prompt about the lesson focus",
+    "tags": [
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "KWL",
+    "description": "Complete Know and Want-to-know before learning; Learned afterward",
+    "tags": [
+      "prior knowledge",
+      "curiosity"
+    ]
+  },
+  {
+    "name": "Kinesthetic Tic Tac Toe",
+    "description": "Discuss lesson prompts while moving through a tic-tac-toe grid",
+    "tags": [
+      "collaboration",
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Learning Logs",
+    "description": "Connect previous learning to the new lesson through a log entry",
+    "tags": [
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Meet and Greet (or “Speed Dating”)",
+    "description": "Introduce ideas using lesson vocabulary in brief exchanges",
+    "tags": [
+      "collaboration",
+      "vocabulary"
+    ]
+  },
+  {
+    "name": "Numbered Heads Together",
+    "description": "Discuss a question in groups of four, then call on a numbered learner",
+    "tags": [
+      "collaboration",
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Pass the Note",
+    "description": "Pass a written question around for responses and new questions",
+    "tags": [
+      "collaboration",
+      "curiosity"
+    ]
+  },
+  {
+    "name": "Plus/Minus/Intriguing",
+    "description": "Mark statements agree, disagree, or intriguing and explain reasoning",
+    "tags": [
+      "misconceptions",
+      "curiosity"
+    ]
+  },
+  {
+    "name": "Post-It Questions",
+    "description": "Post questions about the topic and revisit them at lesson end",
+    "tags": [
+      "curiosity"
+    ]
+  },
+  {
+    "name": "Quick Talk",
+    "description": "Briefly discuss a focused issue related to upcoming learning",
+    "tags": [
+      "collaboration",
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Quick Writes",
+    "description": "Write rapidly about the topic for a set time",
+    "tags": [
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Questions to the Teacher",
+    "description": "Generate three questions related to the lesson's focus",
+    "tags": [
+      "curiosity"
+    ]
+  },
+  {
+    "name": "Read Alouds",
+    "description": "Hear a short text excerpt that activates lesson-relevant thinking",
+    "tags": [
+      "curiosity",
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Read and Say Something",
+    "description": "Read a short passage and discuss with a partner",
+    "tags": [
+      "collaboration",
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Red Light Green Light",
+    "description": "Respond to prompts while participating in stop-and-go movement",
+    "tags": [
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Sentence Starters/Prompts",
+    "description": "Complete short starters about prior understanding",
+    "tags": [
+      "prerequisite",
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Snowball Fights",
+    "description": "Write, toss, and respond to anonymous paper prompts",
+    "tags": [
+      "collaboration",
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Sorts",
+    "description": "Categorize or rank content words, images, statements, or numbers",
+    "tags": [
+      "misconceptions",
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Stand the Line",
+    "description": "Move toward or away from a line to signal and justify agreement",
+    "tags": [
+      "misconceptions",
+      "collaboration"
+    ]
+  },
+  {
+    "name": "Sticky Notes",
+    "description": "Post and revisit brief responses about a concept",
+    "tags": [
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "StoryBoard",
+    "description": "Illustrate existing knowledge through a sequence of panels",
+    "tags": [
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Think-Pair-Share",
+    "description": "Think independently, discuss with a partner, then share",
+    "tags": [
+      "collaboration",
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Think-Pair-Write",
+    "description": "Brainstorm with a partner, then write independently",
+    "tags": [
+      "collaboration",
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Think-Write-Share",
+    "description": "Think, write, and then explain to a partner",
+    "tags": [
+      "collaboration",
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Thumbs Up Thumbs Down",
+    "description": "Signal an initial response to a targeted prompt",
+    "tags": [
+      "misconceptions",
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Transformed Text",
+    "description": "Recast a text in another genre to capture core meaning",
+    "tags": [
+      "prerequisite",
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Turn and Talk",
+    "description": "Discuss a tightly focused question with a partner",
+    "tags": [
+      "collaboration",
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Twenty Questions",
+    "description": "Ask yes/no questions to uncover a hidden topic or concept",
+    "tags": [
+      "curiosity",
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Video Clips",
+    "description": "Analyze or question a short clip rather than passively view",
+    "tags": [
+      "curiosity",
+      "misconceptions"
+    ]
+  },
+  {
+    "name": "What Ifs",
+    "description": "Respond to hypothetical situations that invite reasoning",
+    "tags": [
+      "curiosity",
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "What’s Missing?",
+    "description": "Infer omitted key terms or ideas in a short sentence",
+    "tags": [
+      "prerequisite",
+      "misconceptions"
+    ]
+  },
+  {
+    "name": "Why, Why, and Why",
+    "description": "Generate multiple why questions about a single concept",
+    "tags": [
+      "curiosity"
+    ]
+  },
+  {
+    "name": "Word Splash",
+    "description": "Use a set of key terms to construct meaningful sentences",
+    "tags": [
+      "vocabulary",
+      "prior knowledge"
+    ]
+  },
+  {
+    "name": "Written Conversations",
+    "description": "Exchange written responses in a timed sequence",
+    "tags": [
+      "collaboration",
+      "prior knowledge"
+    ]
+  }
+]
