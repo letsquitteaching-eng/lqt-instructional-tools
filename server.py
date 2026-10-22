@@ -1,9 +1,13 @@
 """LQT Opener Generator MCP server: curated strategy lookup and alignment checks."""
 import json
+import logging
 import os
 import re
 from pathlib import Path
 from fastmcp import FastMCP
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("lqt.opener")
 
 mcp = FastMCP("LQT Opener Generator")
 STRATEGIES = json.loads((Path(__file__).parent / "strategies.json").read_text(encoding="utf-8"))
@@ -12,6 +16,7 @@ PURPOSES = {"prior knowledge", "curiosity", "collaboration", "prerequisite", "vo
 @mcp.tool
 def find_opening_strategies(learning_target: str, grade_level: str, purpose: str = "prior knowledge", exclude_names: list[str] | None = None, limit: int = 12) -> dict:
     """Search LQT's author-curated opening strategies by instructional purpose. Inputs: grade, learning target and optional purpose. Returns original strategy names and descriptions, not invented activities. Use results to write five adapted classroom-ready opener options."""
+    logger.info("LQT TOOL CALLED: find_opening_strategies")
     if not learning_target.strip() or not grade_level.strip():
         return {"error": "Grade level and learning target are required before choosing strategies."}
     requested = {x.strip().lower() for x in re.split(r"[,;/]", purpose) if x.strip()}
@@ -25,6 +30,7 @@ def find_opening_strategies(learning_target: str, grade_level: str, purpose: str
 @mcp.tool
 def check_opener_alignment(learning_target: str, opener_description: str, lesson_minutes: int = 50, opener_minutes: int = 5, activates_prior_knowledge: bool = False, ignites_curiosity: bool = False, includes_collaboration: bool = False, explicitly_links_to_target: bool = False, previews_prerequisites: bool = False, evidence_to_notice: str = "") -> dict:
     """Apply the author's Opening framework as a transparent checklist to a draft opener. Boolean inputs are teacher-verified, not automatically inferred; output flags missing evidence and duration concerns, without claiming to assess actual learner impact."""
+    logger.info("LQT TOOL CALLED: check_opener_alignment")
     if not learning_target.strip() or not opener_description.strip():
         return {"error":"Learning target and draft opener are required."}
     if lesson_minutes <= 0 or opener_minutes <= 0:
