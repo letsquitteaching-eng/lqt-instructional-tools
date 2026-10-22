@@ -3,10 +3,20 @@ import json
 import logging
 import os
 from fastmcp import FastMCP
+from starlette.requests import Request
+from starlette.responses import PlainTextResponse
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("lqt.gradual_release")
 mcp = FastMCP("LQT Gradual Release Idea Generator")
+
+# OpenAI ownership verification for this Render hostname.
+# This verification value is intended to be publicly returned by the endpoint.
+OPENAI_DOMAIN_CHALLENGE = "eKGwD9sxxaSGBjd0qlbZW6VF5GRhf70thNiRSXG65Vg"
+
+@mcp.custom_route("/.well-known/openai-apps-challenge", methods=["GET"])
+async def openai_domain_verification(request: Request) -> PlainTextResponse:
+    return PlainTextResponse(OPENAI_DOMAIN_CHALLENGE)
 
 PHASES = {
     "I Do": {"purpose": "Make the disciplinary thinking visible through concise modeling.", "responsibility": "teacher makes decisions and reasoning explicit", "evidence": "Learners predict/explain a model step, rather than report confidence.", "possible_supports": ["worked example", "think-aloud", "visual model"]},
@@ -45,3 +55,4 @@ def suggest_release_response(learning_target: str, phase: str, evidence_observed
 
 if __name__ == "__main__":
     mcp.run(transport="http", host="0.0.0.0", port=int(os.environ.get("PORT", "8000")))
+
